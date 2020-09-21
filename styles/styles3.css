@@ -9,7 +9,8 @@
     margin-top: 0px;
     border-bottom: black solid 1px;
     padding-top: 0px;
-    padding-inline-start: 0px;   
+    padding-inline-start: 0px;
+  
 }
 
 
@@ -23,6 +24,7 @@ h1{
 
 
 section{
+    padding-top: 30px;
     display: flex;
     justify-content: space-around;
     background-color: lightcoral;
