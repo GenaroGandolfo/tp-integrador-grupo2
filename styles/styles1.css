@@ -3,26 +3,30 @@
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.795);
+    background: linear-gradient(to right, aqua, violet);
     border: 2px;
     text-align: center;
     margin-top: 0px;
-    border: white 2px;
+    border: black solid 2px;
     padding-top: 0px;
     padding-inline-start: 0px;
 }
 
-h1 {
-    font-size: 70px;
+
+h1{
+    font-size: 90px;
     color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 
 section{
     padding-top: 0px;
     display: flex;
-    background-color: rgb(160, 95, 106);
+    background-color: black;
     list-style-type: none;
     justify-content: space-around;
+    color: white;
 }
 
 section div ul {
@@ -33,7 +37,7 @@ section div ul {
 
 h2{
     width: 100px;
-    color: rgb(236, 232, 231);
+    color: white;
 }
 body{
     background-color: black;
