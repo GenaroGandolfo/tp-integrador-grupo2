@@ -17,9 +17,14 @@ h1 {
 }
 
 section{
-    padding-top: 100px;
+    padding: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: cadetblue;
+    border: black solid 2px;
+    align-items:
+}
 
+.genero{
+    
 }
