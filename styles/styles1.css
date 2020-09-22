@@ -3,23 +3,24 @@
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.795);
     border: 2px;
     text-align: center;
     margin-top: 0px;
-    border: black solid 2px;
+    border: white 2px;
     padding-top: 0px;
     padding-inline-start: 0px;
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 70px;
+    color: white;
 }
 
 section{
     padding-top: 0px;
     display: flex;
-    background-color: cadetblue;
+    background-color: rgb(160, 95, 106);
     list-style-type: none;
     justify-content: space-around;
 }
@@ -32,4 +33,12 @@ section div ul {
 
 h2{
     width: 100px;
+    color: rgb(236, 232, 231);
+}
+body{
+    background-color: black;
+}
+
+section div h2{
+    font-size: 15px;
 }
