@@ -4,7 +4,8 @@
     align-items: center;
     list-style-type: none;
     background: aqua;
-    background: linear-gradient(to right, aqua, lime);
+    background: linear-gradient(to right, aqua, violet
+    );
     border: 2px;
     text-align: center;
     margin-top: 0px;
@@ -19,6 +20,8 @@
 
 h1{
     font-size: 90px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
 body{
@@ -31,10 +34,10 @@ section{
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
-    background: aqua;
-    background: linear-gradient(to right, aqua, lime);
+    background: black
     padding-left: 10px;
     padding-right: 10px;
+    color: white;
 }
 section div .despeli{
     display: flex;
