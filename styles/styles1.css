@@ -17,9 +17,17 @@ h1 {
 }
 
 section{
-    padding-top: 100px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     background-color: cadetblue;
+    align-items: initial;
+    list-style-type: none;
+}
 
+section div ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    padding-top: 20px;    
 }
