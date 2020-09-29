@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    background: linear-gradient(to right, aqua, violet);
+    background: black;
     border: 2px;
     text-align: center;
     margin-top: 0px;
@@ -12,38 +12,36 @@
     padding-inline-start: 0px;
   
 }
-
-
-
 .header ul a{
     text-decoration: none;
 }
+
 h1{
     font-size: 80px;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 body{
-    background-color: black;
+    background-color:antiquewhite;
 }
-
-
 
 section{
     padding-top: 10px;
     display: flex;
-    justify-content: space-between;
-    background: black;
-    padding-left: 10px;
+    justify-content: space-around;
+    background: antiquewhite;
+    padding-left: 20px;
     padding-right: 10px;
-    color: white;
+    color: black;
+    border: black solid 2px;
 }
 section div .despeli{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: solid black 2px;
-    width: 200%;
+    width: 500px;
     height: 100px; 
     padding: 10px;
 }
