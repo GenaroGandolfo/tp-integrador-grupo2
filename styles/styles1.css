@@ -18,8 +18,91 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
+h2{
+    color: white;
+}
 
 body{
-    background-color: black;
+    background-color: white;
 }
+
+.populares div {
+    width: 100px;
+    height: 100px;
+    border: white solid 2px;
+}
+
+.populares {
+    display: flex;
+    justify-content: space-around;
+}
+
+.basadoenhechosreales div {
+    width: 100px;
+    height: 100px;
+    border: white solid 2px;
+}
+
+.basadoenhechosreales {
+    display: flex;
+    justify-content: space-around;
+}
+
+.comedia div {
+    width: 100px;
+    height: 100px;
+    border: white solid 2px;
+}
+
+.comedia {
+    display: flex;
+    justify-content: space-around;
+}
+
+.romance div {
+    width: 100px;
+    height: 100px;
+    border: white solid 2px;
+}
+
+.romance {
+    display: flex;
+    justify-content: space-around;
+}
+
+.accion div {
+    width: 100px;
+    height: 100px;
+    border: white solid 2px;
+}
+
+.accion {
+    display: flex;
+    justify-content: space-around;
+}
+
+.suspenso div {
+    width: 100px;
+    height: 100px;
+    border: white solid 2px;
+}
+
+.suspenso {
+    display: flex;
+    justify-content: space-around;
+}
+
+.terror div {
+    width: 100px;
+    height: 100px;
+    border: white solid 2px;
+}
+
+.terror {
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    background-color: black;
+} 
