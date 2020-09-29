@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    background: linear-gradient(to right, aqua, violet);
+    background: black;
     border: 2px;
     text-align: center;
     margin-top: 0px;
@@ -12,14 +12,18 @@
     padding-inline-start: 0px;
 }
 
-h1 {
-    font-size: 90px;
+}
+.header ul a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 80px;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 h2{
-    color: white;
+    color: black;
 }
 
 body{
@@ -29,7 +33,7 @@ body{
 .populares div {
     width: 100px;
     height: 100px;
-    border: white solid 2px;
+    border: black solid 2px;
 }
 
 .populares {
@@ -40,7 +44,7 @@ body{
 .basadoenhechosreales div {
     width: 100px;
     height: 100px;
-    border: white solid 2px;
+    border: black solid 2px;
 }
 
 .basadoenhechosreales {
@@ -51,7 +55,7 @@ body{
 .comedia div {
     width: 100px;
     height: 100px;
-    border: white solid 2px;
+    border: black solid 2px;
 }
 
 .comedia {
@@ -62,7 +66,7 @@ body{
 .romance div {
     width: 100px;
     height: 100px;
-    border: white solid 2px;
+    border: black solid 2px;
 }
 
 .romance {
@@ -73,7 +77,7 @@ body{
 .accion div {
     width: 100px;
     height: 100px;
-    border: white solid 2px;
+    border: black solid 2px;
 }
 
 .accion {
@@ -84,7 +88,7 @@ body{
 .suspenso div {
     width: 100px;
     height: 100px;
-    border: white solid 2px;
+    border: black solid 2px;
 }
 
 .suspenso {
@@ -95,7 +99,7 @@ body{
 .terror div {
     width: 100px;
     height: 100px;
-    border: white solid 2px;
+    border: black solid 2px;
 }
 
 .terror {
@@ -104,5 +108,5 @@ body{
 }
 
 body {
-    background-color: black;
+    background-color: antiquewhite;
 } 
