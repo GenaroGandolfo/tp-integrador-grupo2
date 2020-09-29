@@ -102,3 +102,7 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+h3 {
+    font-size: 40px;
+}
