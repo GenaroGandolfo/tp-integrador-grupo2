@@ -34,35 +34,13 @@ body{
     background-color: white;
 }
 
-.populares div {
+.cajas div {
     width: 200px;
     height: 200px;
     border: black solid 2px;
 }
 
-.populares {
-    display: flex;
-    justify-content: space-around;
-}
-
-.basadoenhechosreales div {
-    width: 200px;
-    height: 200px;
-    border: black solid 2px;
-}
-
-.basadoenhechosreales {
-    display: flex;
-    justify-content: space-around;
-}
-
-.recomendadosparati div {
-    width: 200px;
-    height: 200px;
-    border: black solid 2px;
-}
-
-.recomendadosparati {
+.cajas {
     display: flex;
     justify-content: space-around;
 }
@@ -89,4 +67,9 @@ body {
     padding-inline-start: 30px;
     padding-bottom: 160px;
     padding-top: 10px;
+}
+
+.cajas img {
+    width: 100%;
+    height: 100%
 }
