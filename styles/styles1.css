@@ -75,3 +75,15 @@ body {
     height: 30px;
     width: 30;
 }
+
+.footer {
+    display: flex;
+    list-style-type: none;
+    background: black;
+    border: 33px;
+    text-align: center;
+    margin-top: 60px;
+    border: black solid 2px;
+    padding-top: 0px;
+    padding-inline-start: 30px;
+}
