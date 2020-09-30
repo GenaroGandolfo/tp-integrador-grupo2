@@ -12,6 +12,10 @@
     padding-inline-start: 0px;
 }
 
+.header img {
+    height: 100px;
+    width: 100px;
+}
 
 .header ul a{
     text-decoration: none;
@@ -31,8 +35,8 @@ body{
 }
 
 .populares div {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: black solid 2px;
 }
 
@@ -42,8 +46,8 @@ body{
 }
 
 .basadoenhechosreales div {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: black solid 2px;
 }
 
@@ -52,57 +56,13 @@ body{
     justify-content: space-around;
 }
 
-.comedia div {
-    width: 100px;
-    height: 100px;
+.recomendadosparati div {
+    width: 200px;
+    height: 200px;
     border: black solid 2px;
 }
 
-.comedia {
-    display: flex;
-    justify-content: space-around;
-}
-
-.romance div {
-    width: 100px;
-    height: 100px;
-    border: black solid 2px;
-}
-
-.romance {
-    display: flex;
-    justify-content: space-around;
-}
-
-.accion div {
-    width: 100px;
-    height: 100px;
-    border: black solid 2px;
-}
-
-.accion {
-    display: flex;
-    justify-content: space-around;
-}
-
-.suspenso div {
-    width: 100px;
-    height: 100px;
-    border: black solid 2px;
-}
-
-.suspenso {
-    display: flex;
-    justify-content: space-around;
-}
-
-.terror div {
-    width: 100px;
-    height: 100px;
-    border: black solid 2px;
-}
-
-.terror {
+.recomendadosparati {
     display: flex;
     justify-content: space-around;
 }
@@ -110,3 +70,8 @@ body{
 body {
     background-color: antiquewhite;
 } 
+
+.footer img {
+    height: 30px;
+    width: 30;
+}
