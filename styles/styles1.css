@@ -76,14 +76,17 @@ body {
     width: 30;
 }
 
-.footer {
+.footer ul {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     list-style-type: none;
     background: black;
     border: 33px;
-    text-align: center;
+    text-align: start;
     margin-top: 60px;
     border: black solid 2px;
-    padding-top: 0px;
     padding-inline-start: 30px;
+    padding-bottom: 160px;
+    padding-top: 10px;
 }
