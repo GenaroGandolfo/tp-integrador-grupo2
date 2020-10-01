@@ -6,16 +6,15 @@
     background: black;
     border: 2px;
     text-align: center;
-    margin-top: 0px;
     border: black solid 2px;
     padding-top: 0px;
     padding-inline-start: 0px;
-    margin: 0px;
-  
+    margin: 0px; 
 }
+
 .header ul a{
     text-decoration: none;
-    color: ;
+    color: antiquewhite ;
 }
 
 }
@@ -38,6 +37,7 @@ section{
     padding-right: 10px;
     color: black;
     border: black solid 2px;
+    margin-bottom: 0px;
 }
 section div .despeli{
     display: flex;
@@ -45,8 +45,9 @@ section div .despeli{
     justify-content: space-between;
     border: solid black 2px;
     width: 500px;
-    height: 100px; 
+    height: auto; 
     padding: 10px;
+
 }
 
 .footer ul {
@@ -55,6 +56,12 @@ section div .despeli{
     list-style-type: none;
 
 }
+
+h4{
+    padding: 0;
+    margin: 0;
+}
+
 footer{
     color: white;
     background: black;    
@@ -65,6 +72,7 @@ footer{
     padding-right: 10px;
     display: grid;
     grid-template-rows: 2;
+    margin-top: 0px;
 }
 .footer img {
     height: 30px;
