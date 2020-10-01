@@ -45,3 +45,74 @@ section div .despeli{
     height: 100px; 
     padding: 10px;
 }
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+footer{
+    color: white;
+    background: black;    
+    margin-top: 35px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-rows: 2;
+}
+.footer img {
+    height: 30px;
+    width: 30;
+ }
+
+.nombres{
+display: flex;
+justify-content: space-around;
+}
+
+.contactenos {
+    text-align: center;
+
+}
+
+.redes {
+    text-align: center;
+}
+
+@media only screen and (max-width:375px) {
+    .navegador{
+        display: none;
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    h1{
+        font-size: 60px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column-reverse;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    section div .despeli{
+        border: none;
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+    .imagen img{
+        text-align: center;
+        width: 365px;
+        padding: 0;
+        margin: 0;
+    }
+
+}
