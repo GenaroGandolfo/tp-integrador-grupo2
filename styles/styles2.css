@@ -74,6 +74,10 @@ footer{
     width: 30;
  }
 
+ .contactenos a {
+     color: white;
+ }
+
  .nombres{
     display: flex;
     justify-content: space-around;
@@ -89,15 +93,33 @@ footer{
     }
 
 @media only screen and (max-width: 375px) {
-    .navegador {
+    .navegador{
         display: none;
     }
-    .header{
-        display: none;
+    .header ul{
+        display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .h1{
+    h1{
         font-size: 60px;
+    }
+    .generos {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding: 0px;
+        margin: 0px;        
+    }
+    h3 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 30px;
+    }
+    body {
+        margin: 3px;
+    }
+    .cajas {
+        
     }
 }
