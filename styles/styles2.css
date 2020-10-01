@@ -7,13 +7,18 @@
     border: 2px;
     text-align: center;
     margin-top: 0px;
-    border: white solid 2px;
+    border:black solid 2px;
     padding-top: 0px;
     padding-inline-start: 0px;
 }
 
+.header img {
+    height: 100px;
+    width: 100px;
+}
+
 h1 {
-    font-size: 90px;
+    font-size: 80px;
     color:white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -24,12 +29,13 @@ body{
 
 .header ul a{
     text-decoration: none;
+    color: antiquewhite;
 }
 
 .cajas div {
     width: 200px;
     height: 250px;
-    border: black solid 2px;
+    border: white solid 2px;
 }
 
 .cajas {
@@ -46,22 +52,41 @@ h3 {
     width: 100%;
 }
 
-.footer img {
-    height: 30px;
-    width: 30;
-}
-
 .footer ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     list-style-type: none;
-    background: black;
-    border: 33px;
     text-align: start;
-    margin-top: 60px;
-    border: black solid 2px;
-    padding-inline-start: 30px;
-    padding-bottom: 160px;
+}
+
+.footer img {
+    height: 30px;
+    width: 30;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: black;    
     padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 35px;
+}
+
+@media only screen and (max-width: 375px) {
+    .navegador {
+        display: none;
+    }
+    .header{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .h1{
+        font-size: 60px;
+    }
 }
