@@ -17,7 +17,7 @@
     color: antiquewhite ;
 }
 
-}
+
 h1{
     font-size: 80px;
     color: white;
@@ -46,8 +46,11 @@ section div .despeli{
     border: solid black 2px;
     width: 500px;
     height: auto; 
-    padding: 10px;
+}
 
+section div .despeli p{
+    padding: 3px;
+  
 }
 
 .footer ul {
@@ -122,9 +125,12 @@ justify-content: space-around;
     }
     .imagen img{
         text-align: center;
-        width: 365px;
+        width: 373px;
         padding: 0;
         margin: 0;
+    }
+    body{
+        margin: 1px;
     }
 
 }
