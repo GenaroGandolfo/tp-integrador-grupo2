@@ -45,3 +45,23 @@ h3 {
     height: 100%;
     width: 100%;
 }
+
+.footer img {
+    height: 30px;
+    width: 30;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    background: black;
+    border: 33px;
+    text-align: start;
+    margin-top: 60px;
+    border: black solid 2px;
+    padding-inline-start: 30px;
+    padding-bottom: 160px;
+    padding-top: 10px;
+}
