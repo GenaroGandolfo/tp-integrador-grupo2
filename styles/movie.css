@@ -135,6 +135,10 @@ justify-content: space-around;
         border: none;
 
     }
+    .nombres {
+        font-size: 14px;
+    }
+
    
 
 }
