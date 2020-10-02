@@ -80,7 +80,7 @@ footer{
 }
 .footer img {
     height: 30px;
-    width: 30;
+ 
  }
 
 .nombres{
@@ -107,9 +107,10 @@ justify-content: space-around;
     .header ul{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 375px;
         padding-bottom: 10px;
     }
+
     h1{
         font-size: 60px;
         margin: 10px;
