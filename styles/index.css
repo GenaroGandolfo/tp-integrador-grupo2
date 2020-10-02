@@ -55,9 +55,9 @@ body {
 footer{
     color: white;
     background: black;    
-    margin-top: 100px;
+    margin-top: 60px;
     padding-left: 10px;
-    padding-bottom: 2px;
+    padding-bottom: 15px;
     padding-right: 10px;
 }
 .footer img {
@@ -110,4 +110,13 @@ align-items: baseline;
         width: 100px;
         height: 125px;
     }
+
+    .nombres {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding-bottom: 80px;
+    }
+
 }
