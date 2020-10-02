@@ -26,6 +26,7 @@ h1{
 
 body{
     background-color:antiquewhite;
+    border: 2px black solid;
 }
 
 section{
@@ -36,7 +37,6 @@ section{
     padding-left: 20px;
     padding-right: 10px;
     color: black;
-    border: black solid 2px;
     margin-bottom: 0px;
 }
 
