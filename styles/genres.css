@@ -103,13 +103,15 @@ footer{
     }
     h1{
         font-size: 60px;
+        margin: 10px;
     }
-    .generos {
-        display: flex;
-        flex-direction: column;
-        border: none;
-        padding: 0px;
-        margin: 0px;        
+    .cajas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .cajas div{
+        width: 100px;
+        height: 125px;
     }
     h3 {
         padding: 0px;
