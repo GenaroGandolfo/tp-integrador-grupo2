@@ -3,11 +3,11 @@
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    background-color: black;
+    background: black;
     border: 2px;
     text-align: center;
     margin-top: 0px;
-    border:black solid 2px;
+    border: black solid 2px;
     padding-top: 0px;
     padding-inline-start: 0px;
 }
@@ -17,19 +17,18 @@
     width: 100px;
 }
 
-h1 {
-    font-size: 80px;
-    color:white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-body{
-    background-color: antiquewhite;
-}
-
 .header ul a{
     text-decoration: none;
     color: antiquewhite;
+}
+
+h1{
+    font-size: 80px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2{
+    color: black;
 }
 
 .cajas div {
@@ -43,14 +42,9 @@ body{
     justify-content: space-around;
 }
 
-h3 {
-    font-size: 40px;
-}
-
-.generos img {
-    height: 100%;
-    width: 100%;
-}
+body {
+    background-color: antiquewhite;
+} 
 
 .footer ul {
     display: flex;
@@ -61,36 +55,37 @@ h3 {
 footer{
     color: white;
     background: black;    
-    margin-top: 35px;
-    padding-top: 10px;
-    padding-bottom: 100px;
+    margin-top: 100px;
     padding-left: 10px;
+    padding-bottom: 2px;
     padding-right: 10px;
-    display: grid;
-    grid-template-rows: 2;
 }
 .footer img {
     height: 30px;
     width: 30;
  }
 
- .contactenos a {
-     color: white;
- }
+.nombres{
+display: flex;
+justify-content: space-around;
+align-items: baseline;
+}
 
- .nombres{
-    display: flex;
-    justify-content: space-around;
-    }
-    
-    .contactenos {
-        text-align: center;
-    
-    }
-    
-    .redes {
-        text-align: center;
-    }
+.contactenos{
+    text-align: center;
+}
+
+.contactenos a {
+    color: white
+}
+.redes {
+    text-align: center;
+}
+
+.cajas img {
+    width: 100%;
+    height: 100%
+}
 
 @media only screen and (max-width: 375px) {
     .navegador{
@@ -103,23 +98,16 @@ footer{
     }
     h1{
         font-size: 60px;
+        margin: 10px;
     }
-    .generos {
-        display: flex;
-        flex-direction: column;
-        border: none;
-        padding: 0px;
-        margin: 0px;        
+    
+    .cajas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    h3 {
-        padding: 0px;
-        margin: 0px;
-        font-size: 30px;
-    }
-    body {
-        margin: 3px;
-    }
-    .cajas {
-        
+
+    .cajas div { 
+        width: 100px;
+        height: 125px;
     }
 }
