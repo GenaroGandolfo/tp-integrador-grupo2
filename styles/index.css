@@ -71,11 +71,13 @@ justify-content: space-around;
 align-items: baseline;
 }
 
-.contactenos {
+.contactenos{
     text-align: center;
-
 }
 
+.contactenos a {
+    color: white
+}
 .redes {
     text-align: center;
 }
@@ -96,6 +98,16 @@ align-items: baseline;
     }
     h1{
         font-size: 60px;
+        margin: 10px;
+    }
+    
+    .cajas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .cajas div { 
+        width: 100px;
+        height: 125px;
+    }
 }
