@@ -90,6 +90,9 @@ justify-content: space-around;
 
 .contactenos {
     text-align: center;
+}
+.contactenos a{
+    color:white;
 
 }
 
