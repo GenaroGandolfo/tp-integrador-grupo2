@@ -26,7 +26,7 @@ h1{
 
 body{
     background-color:antiquewhite;
-    border: ;
+    border: 2px;
 }
 
 section{
@@ -127,12 +127,11 @@ justify-content: space-around;
     }
     .imagen img{
         text-align: center;
-        width: 373px;
+        width: 365px;
         padding: 0;
         margin: 0;
     }
     body{
-        margin: 1px;
+        border: none;
     }
-
 }

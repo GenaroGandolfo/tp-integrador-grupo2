@@ -127,9 +127,13 @@ justify-content: space-around;
     }
     .imagen img{
         text-align: center;
-        width: 365px;
+        width: 365.px;
         padding: 0;
         margin: 0;
+    }
+    body{
+        border: none;
+
     }
    
 
