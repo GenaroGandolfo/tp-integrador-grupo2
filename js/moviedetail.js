@@ -1,13 +1,17 @@
 var apikey='811c43dae475e925f89e17499fd11f5c'
 
-window.addEventListener("load" function(){}
+window.addEventListener("load",function(){
 
-fetch(`https://api.themoviedb.org/3/movie/{movie_id}/similar?api_key=${apikey} &language=en-US&page=1`)
+fetch(``)
 .then(function(response){
 return response.json();
 })
 .then(function(data){
-console.log(data);
+   for (let index = 0; index < data.results.length; index++) {
+       const element = data.results [index];
+       
+   }
+   console.log(data);
 })
 .catch(function(error){
 console.log('El error fué: ' + error);
