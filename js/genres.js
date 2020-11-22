@@ -9,6 +9,9 @@ return response.json();
 .then(function(data){
 console.log(data);
 })
+
+for (let index = 0)
+
 .catch(function(error){
 console.log('El error fué: ' + error);
 })
