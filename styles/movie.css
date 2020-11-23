@@ -19,9 +19,9 @@
 }
 
 h1{
-    font-size: 80px;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px !important;
+    color: white !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
 }
 
 body{
@@ -107,7 +107,7 @@ justify-content: space-around;
         margin-bottom: 5px;
     }
     h1{
-        font-size: 65px;
+        font-size: 65px !important;
         padding: 0px;
         margin: 5px;
     }
