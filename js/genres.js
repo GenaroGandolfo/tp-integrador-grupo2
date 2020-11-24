@@ -1,21 +1,32 @@
-var apikey='811c43dae475e925f89e17499fd11f5c'
+window.addEventListener ("load",function(){
 
-window.addEventListener("load" function(){}
+    
+    fetch(`https://api.themoviedb.org/3/movie/{movie_id}/images?api_key=${apiKey}&language=en-US`)
+    .then(function(response){
+    return response.json();
+    })
+    .then(function(data){
+        console.log(data)
+    
+        var comedia = document.querySelector("#comedia");
 
-fetch(`https://api.themoviedb.org/3/movie/{movie_id}/similar?api_key=${apikey} &language=en-US&page=1`)
-.then(function(response){
-return response.json();
+        for (let index = 0; index < data.results.length; index++) {
+            var results = data.results[index];
+
+            comedia.innerHTML +=
+            `
+                <li>
+                    <a href="movieDetails.html"> <div><img src="${imageneslink}" alt=""> </div></a>
+                </li>
+            `
+            
+        }
 })
-.then(function(data){
-console.log(data);
-})
 
-for (let index = 0)
-
-.catch(function(error){
-console.log('El error fué: ' + error);
-})
+    .catch(function(error){
+    console.log('El error fué: ' + error);
+    })
 
 
-
+    
 })
