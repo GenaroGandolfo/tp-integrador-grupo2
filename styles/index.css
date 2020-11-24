@@ -19,7 +19,7 @@
     width: 100px;
 }
 
-.populares a img{ 
+.populares ul li a img{ 
     height: 300px;
     width: auto;
 
