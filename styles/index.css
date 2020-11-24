@@ -20,8 +20,9 @@
 }
 
 .populares a img{ 
-    height: 250px;
+    height: 300px;
     width: auto;
+
 }
 
 h1 {
@@ -65,6 +66,7 @@ body{
 
 .main{
     padding: 20px;
+
 }
 
 
