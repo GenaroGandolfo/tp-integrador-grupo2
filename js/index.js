@@ -19,13 +19,15 @@ window.addEventListener('load', function(){
     }
 
 
-        populares.innerHTML += `
-        
-            <a href="movieDetails.html">
-                <img src="${imageneslink}${results.poster_path}" alt="">
-                <div class="uk-position-center uk-panel"></div>
-            </a>     
-          
+        populares.innerHTML += 
+        `
+        <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@"   class="populares"  id="pop">
+            <li>
+                <a href="movieDetails.html">
+                    <img src="${imageneslink}${results.poster_path}" alt="">
+                </a>     
+            </li> 
+        </ul>
         `     
         
 
