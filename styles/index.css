@@ -19,6 +19,11 @@
     width: 100px;
 }
 
+.populares a img{ 
+    height: 250px;
+    width: auto;
+}
+
 h1 {
     font-size: 80px;
     color:white;
@@ -57,16 +62,12 @@ body{
     justify-content: space-around;
 }
 
-.generos img {
-    height: 100%;
-    width: 100%;
+
+.main{
+    padding: 20px;
 }
 
-.uk-slider-items {
-    height: 100%;
-    width: 100%;
-   
-}
+
 
 .uk-slider-items div {
     width: 90%;
