@@ -8,45 +8,51 @@
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+    <script src="js/atajos.js"></script>
     <script src="js/index.js"></script>
+    
 </head>
 <body>
     
-    <header class="header">
+    <header class="header">  
         <ul>
             <img src="../tp-integrador-grupo2/imagenes/logo.png" alt="">
-           <li><h1>Pelis.ar</h1></li> 
+            <li><h1>Pelis.ar</h1></li> 
             <li class="navegador"><a href="">Login</a></li>
             <li> <a href="genres.html">Géneros</a></li>
             <li><input type="text" value= ""placeholder="Buscar... "> </li>
         </ul>
     </header>
 
-    <section class="generos">
+    <section class="main">
 
         <div>
         <h2>Populares</h2>
         </div>
 
-        <div uk-slider class="populares">
-            <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@">
-                <li>
-                    <a href="movieDetails.html"> <div> <img src="" alt=""> </div> </a> 
-                </li>  
-                <li>
-                    <a href="movieDetails.html"> <div> <img src="" alt=""> </div> </a>
-                </li>
-                <li>   
-                    <a href="movieDetails.html"> <div> <img src="" alt=""> </div> </a>
-                </li> 
-                <li>
-                    <a href="movieDetails.html"> <div> <img src="" alt=""> </div> </a>
-                </li>
-                <li>   
-                    <a href="movieDetails.html"> <div> <img src="" alt=""> </div> </a>
-                </li> 
+      
+        
+       
+        <div uk-slider>
+            <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@"   class="populares"  id="pop">
+                <!-- 
+                    <li>
+
+                    
+                        <a href="movieDetails.html">
+                            <img src="${imageneslink}${results.poster_path}" alt="">
+                            <div class="uk-position-center uk-panel"></div>
+                        </a> 
+                    </li>
+                -->
+               
+               
             </ul>
+        
+        
         </div>
+    
+         
         
 
         <div>
