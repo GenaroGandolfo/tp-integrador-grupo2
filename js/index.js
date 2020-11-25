@@ -70,3 +70,33 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&
 	.then(function(response){
 	return response.json();
 })
+	.then(function(data){
+    console.log(data);
+    
+
+    var tvpopular = document.querySelector ("#tvpopular");
+
+    for (let index = 0; index < data.results.length; index++) {
+        var results2 = data.results[index];
+    
+
+
+        tvpopular.innerHTML += 
+        `
+        
+        <li>
+            <a href="movieDetails.html"> <div><img src="${imageneslink}${results2.poster_path}" alt="${results2.name}"> </div></a>
+        </li>
+    
+        `     
+       
+    } 
+})
+	.catch(function(error){
+	console.log('El error fué: ' + error);
+})
+
+
+})
+
+// hola //
