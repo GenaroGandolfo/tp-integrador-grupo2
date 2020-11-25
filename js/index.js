@@ -34,6 +34,7 @@ addEventListener('load', function(){
 })
 
 
+<<<<<<< HEAD
 fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`)
 	.then(function(response){
 	return response.json();
@@ -67,3 +68,8 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-
 
 
 })
+=======
+
+})
+
+>>>>>>> b2f89ca1fa603d32f7602cc77d0c7d26816404e0
