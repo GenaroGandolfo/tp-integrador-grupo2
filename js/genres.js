@@ -1,16 +1,16 @@
 window.addEventListener ("load",function(){
 
     
-    fetch(`https://api.themoviedb.org/3/movie/{movie_id}/images?api_key=${apiKey}&language=en-US`)
+    fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false`)
     .then(function(response){
     return response.json();
     })
     .then(function(data){
-        console.log(data)
+        console.log(data);
     
         var comedia = document.querySelector("#comedia");
 
-        for (let index = 0; index < data.results.length; index++) {
+        for (let index = 0; index < 10; index++) {
             var results = data.results[index];
 
             comedia.innerHTML +=
