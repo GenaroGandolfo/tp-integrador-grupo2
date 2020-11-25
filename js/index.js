@@ -1,6 +1,5 @@
 window.addEventListener('load', function(){
 
-   
 
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`)
 	.then(function(response){
@@ -36,4 +35,15 @@ window.addEventListener('load', function(){
 	console.log('El error fué: ' + error); 
 })
 
+fetch(` /discover/movie?primary_release_year=2010&sort_by=vote_average.descapi_key=${apiKey}&language=en-US&page=1`)
+.then(function(response){
+return response.json();
+})
+.then(function(data){
+    console.log(data)
+
+})
+.catch(function(error){
+    console.log('El error fué: ' + error); 
+})
 })
