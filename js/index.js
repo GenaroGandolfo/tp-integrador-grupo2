@@ -66,4 +66,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-
 
 
 
+fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`)
+	.then(function(response){
+	return response.json();
 })
