@@ -2,7 +2,7 @@ window.addEventListener("load", function(){
 
     var apiKey='811c43dae475e925f89e17499fd11f5c'
 
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=811c43dae475e925f89e17499fd11f5c&language=en-US&page=1`)
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`)
 	.then(function(response){
 	return response.json();
 })
