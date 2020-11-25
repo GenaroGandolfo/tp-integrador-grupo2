@@ -10,13 +10,13 @@ window.addEventListener ("load",function(){
     
         var comedia = document.querySelector("#comedia");
 
-        for (let index = 0; index < 10; index++) {
+        for (let index = 0; index < data.results.length; index++) {
             var results = data.results[index];
 
             comedia.innerHTML +=
             `
                 <li>
-                    <a href="movieDetails.html"> <div><img src="${imageneslink}" alt=""> </div></a>
+                    <a href="movieDetails.html"> <div><img src="${imageneslink}${results.poster_path}" alt="${results.name}"> </div></a>
                 </li>
             `
             

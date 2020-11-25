@@ -1,35 +1,32 @@
 window.addEventListener('load', function(){
 
-   
 
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`)
+    fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=${apiKey}`)
 	.then(function(response){
 	return response.json();
 })
 	.then(function(data){
-        console.log(data)
+        console.log(data);
 
     
-    var populares = document.querySelector ("#pop");
+    var trending = document.querySelector ("#trend");
    
     
-    for (let i = 0; i< data.results.length; i++) {
-         var results = data.results[i];
-        
-    }
+    for (let index = 0; index < data.results.length; index++) {
+        var results = data.results[index];
+    
 
 
-        populares.innerHTML += 
+        trending.innerHTML += 
         `
-        <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@"   class="populares"  id="pop">
-            <li>
-                <a href="movieDetails.html">
-                    <img src="${imageneslink}${results.poster_path}" alt="">
-                </a>     
-            </li> 
-        </ul>
-        `     
         
+        <li>
+            <a href="movieDetails.html"> <div><img src="${imageneslink}${results.poster_path}" alt="${results.name}"> </div></a>
+        </li>
+    
+        `     
+       
+    } 
 
 })
 	.catch(function(error){
