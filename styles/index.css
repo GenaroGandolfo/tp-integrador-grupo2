@@ -66,6 +66,8 @@ body{
 
 .main{
     padding: 20px;
+   
+    padding-right:22px ;
 
 }
 
@@ -74,7 +76,7 @@ body{
 .uk-slider-items div {
     width: 90%;
     height: 90%;
-    border: white solid 2px;
+    
 }
 
 
