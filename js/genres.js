@@ -17,6 +17,7 @@ window.addEventListener ("load",function(){
             `
                 <li>
                     <a href="movieDetails.html"> <div><img src="${imageneslink}${results.poster_path}" alt="${results.name}"> </div></a>
+                    <div class="uk-position-center uk-panel"></div>
                 </li>
             `
             
