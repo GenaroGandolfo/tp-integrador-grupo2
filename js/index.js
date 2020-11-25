@@ -33,4 +33,7 @@ window.addEventListener('load', function(){
 	console.log('El error fué: ' + error); 
 })
 
+
+
 })
+
