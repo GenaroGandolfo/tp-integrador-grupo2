@@ -24,6 +24,7 @@ window.addEventListener ("load",function(){
         }
 })
 
+
     .catch(function(error){
     console.log('El error fué: ' + error);
     })
