@@ -87,6 +87,8 @@ fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genre
         }
 })
 
+MouseEvent.
+
 
     .catch(function(error){
     console.log('El error fué: ' + error);

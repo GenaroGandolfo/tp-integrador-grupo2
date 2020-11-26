@@ -9,7 +9,8 @@
     border: black solid 2px;
     padding-top: 20px;
     padding-inline-start: 0px;
-    margin: 0px; 
+    margin: 0px;
+    padding: 20px;
 }
 
 .header img {
@@ -71,9 +72,9 @@ body{
 .uk-slider-items div {
     width: 90%;
     height: 90%;
+    padding: 30px;
    
 }
-
 
 .footer ul {
     display: flex;
