@@ -16,7 +16,7 @@ window.addEventListener('load', function(){
             
             listaDeGeneros.innerHTML +=
 
-            `<a href="detallesGeneros.html?id=${data.genres[i].id}&name=${data.genres[i].name}"><h2>${data.genres[i].name}</h2></a>`
+            `<a href="genres.html?id=${data.genres[i].id}&name=${data.genres[i].name}"><h2>${data.genres[i].name}</h2></a>`
         }
     })
 
