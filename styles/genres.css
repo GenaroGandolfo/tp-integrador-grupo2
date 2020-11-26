@@ -82,7 +82,7 @@ body{
     list-style-type: none;
 
 }
-footer{
+footer {
     color: white;
     background: black;    
     margin-top: 100px;
@@ -93,8 +93,8 @@ footer{
     border-color: darkcyan;
 }
 .footer img {
-    height: 30px;
-    width: 30;
+    height: 30px!important;
+    width: 30 !important;
  }
 
  .contactenos a {

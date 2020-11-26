@@ -1,98 +1,54 @@
-window.addEventListener ("load",function(){
-
+window.addEventListener('load', function(){
+    var titulo = document.querySelector('.titulo');
+    var peliculas = document.querySelector('.imagenesPelicula');
+    var series = document.querySelector('.imagenesSerie');
+    var tituloSeries = document.querySelector('.series');
     
-    fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false`)
+   /*
+    //var queryString = location.search
+    var queryStringObj = new URLSearchParams (queryString)
+    var queryStringObjId = queryStringObj.get(`idShow`)
+    var stringTipo = queryStringObj.get(`tipo`)
+    var generoTipo = queryStringObj.get(`tipodegenero`)
+    console.log(queryStringObj.get(`id`))
+    var nombreGenero = queryStringObj.get(`nombredelgenero`)
+    */
+    let idEntrante = location.search;
+    console.log(idEntrante);
+    let idEntranteObj = new URLSearchParams(idEntrante);
+    console.log(idEntranteObj);
+    let id = idEntranteObj.get('id');
+    console.log(id)
+    //Traer nombre
+    let nombre = idEntranteObj.get('name');
+    console.log(nombre)
+    //Fetch peliculas genero
+    fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${id}`)
     .then(function(response){
-    return response.json();
+        return response.json();
     })
-    .then(function(data){
-        console.log(data);
-    
-        var comedia = document.querySelector("#comedia");
+   
+        .then (function (data){ 
+            console.log(data) 
+            for(let index = 0; index<data.results.length; index++){
+                var results = data.results[index];
+                titulo.innerHTML = `${nombre} Movies`
+                peliculas.innerHTML += `<a href="detallesPeliculas.html?id=${results.id}"><div class="peliculasBloque"><img src="${imageneslink + results.backdrop_path} " alt="${results.title}"></div></a>`
 
-        for (let index = 0; index < data.results.length; index++) {
-            var results = data.results[index];
+            }
 
-            comedia.innerHTML +=
-            `
-                <li>
-                    <a href="movieDetails.html"> <div><img src="${imageneslink}${results.poster_path}" alt="${results.name}"> </div></a>
-                    <div class="uk-position-center uk-panel"></div>
-                </li>
-            `
+
+        })
+        .then (function (data){ 
+            console.log(data)
+            for(let index = 0; index< data.results.length; index++){
+                var results = data.results[index];
+                tituloSeries.innerHTML = `${nombre} TV Shows`
+                series.innerHTML += `<a href="detallesSeries.html?id=${results.id}"><div class=""><img src="${imageneslink + results.backdrop_path} " alt="${results.name}"></div></a>`
+
+            }
             
-        }
-})
-
-
-    .catch(function(error){
-    console.log('El error fué: ' + error);
-    })
-
-
-
-
-
+   
     
-    fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`)
-	.then(function(response){
-	return response.json();
-})
-	.then(function(data){
-    console.log(data);
-    
-
-    var tvpopular = document.querySelector ("#tvpopular");
-
-    for (let index = 0; index < data.results.length; index++) {
-        var results2 = data.results[index];
-    
-
-
-        tvpopular.innerHTML += 
-        `
-        
-        <li>
-            <a href="movieDetails.html"> <div><img src="${imageneslink}${results2.poster_path}" alt="${results2.name}"> </div></a>
-        </li>
-    
-        `     
-       
-    } 
-})
-	.catch(function(error){
-	console.log('El error fué: ' + error);
-})
-
-fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=28`)  
-.then(function(response){
-    return response.json();
-    })
-    .then(function(data){
-        console.log(data);
-    
-        var accion = document.querySelector("#accion");
-
-        for (let index = 0; index < data.results.length; index++) {
-            var results = data.results[index];
-
-            accion.innerHTML +=
-            `
-                <li>
-                    <a href="movieDetails.html"> <div><img src="${imageneslink}${results.poster_path}" alt="${results.name}"> </div></a>
-                    <div class="uk-position-center uk-panel"></div>
-                </li>
-            `
-            
-        }
-})
-
-MouseEvent.
-
-
-    .catch(function(error){
-    console.log('El error fué: ' + error);
-    })
-
-
+        })
 })
