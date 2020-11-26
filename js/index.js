@@ -21,7 +21,7 @@ addEventListener('load', function(){
         `
         
         <li>
-            <a href="movieDetails.html"> <div><img src="${imageneslink}${results.poster_path}" alt="${results.name}"> </div></a>
+            <a href="movieDetails.html"> <div><img src="${imageneslink + results.poster_path}" alt="${results.name}"> </div></a>
         </li>
     
         `     
@@ -53,7 +53,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-
         `
         
         <li>
-            <a href="movieDetails.html"> <div><img src="${imageneslink}${results1.poster_path}" alt="${results1.name}"> </div></a>
+            <a href="movieDetails.html"> <div><img src="${imageneslink + results1.poster_path}" alt="${results1.name}"> </div></a>
         </li>
     
         `     
@@ -85,7 +85,7 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&
         `
         
         <li>
-            <a href="movieDetails.html"> <div><img src="${imageneslink}${results2.poster_path}" alt="${results2.name}"> </div></a>
+            <a href="movieDetails.html?idShow=${results2.id}"> <div><img src="${imageneslink + results2.poster_path}" alt="${results2.name}"> </div></a>
         </li>
     
         `     

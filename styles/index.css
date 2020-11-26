@@ -71,6 +71,10 @@ body{
 
 }
 
+#banner ul li img{
+    height: 300px !important ; 
+    
+}
 
 
 .uk-slider-items div {
