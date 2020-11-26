@@ -17,8 +17,13 @@
             <a href="index.html"><li><h1>Pelis.ar</h1></li> </a>
             <li class="navegador"><a href="">Login</a></li>
             <li class="navegador"> <a href="index.html">Home</a></li>
-            <li> <a href="genres.html">Géneros</a></li>
-            <li class="buscador"><input type="text" value= ""placeholder="Buscar... "> </li>
+            <li> <a href="genres.html">Genres</a></li>
+            <li> 
+                <form action="resultados.busqueda" method="GET">
+                    <label for="buscar"></label><input type="text" name="buscar" value= ""placeholder="Search... "> 
+                    <button>Search</button>
+                </form>    
+            </li>
             
         </ul>
     </header>
