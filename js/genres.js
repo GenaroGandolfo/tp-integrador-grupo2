@@ -5,6 +5,7 @@ window.addEventListener('load', function(){
     var series = document.querySelector('.imagenesSerie');
     var tituloSeries = document.querySelector('.series');
     var carruselPeli = document.querySelector('#carruselPeli')
+    var carruselSerie = document.querySelector('#carruselSerie')
   
     let idEntrante = location.search;
     console.log(idEntrante);
@@ -35,7 +36,7 @@ window.addEventListener('load', function(){
                             <a href="detalles.html?id=${results.id}">
                             <div class="imagnesCarrusel"><img src="${imageneslink + results.backdrop_path} " alt="${results.title}"><h3>${results.title}</h3></div></a>
                                 
-                                <div class="uk-position-center uk-panel"></div>
+                            <div class="uk-position-center uk-panel"></div>
                         </div>
                     </li>
                 
@@ -47,13 +48,29 @@ window.addEventListener('load', function(){
 
 
         })
+        fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${id}`)
+        .then(function(response){
+        return response.json();
+    })
+
         .then (function (data){ 
             console.log(data)
             for(let index = 0; index< data.results.length; index++){
                 var results = data.results[index];
                 tituloSeries.innerHTML = `${nombre} TV Shows`
-                series.innerHTML += `<a href="detalles.html?id=${results.id}"><div class=""><img src="${imageneslink + results.backdrop_path} " alt="${results.name}"></div></a>`
-
+                carruselSerie.innerHTML += 
+                
+                
+                `
+                <li>
+                    <div class="uk-panel">
+                        <a href="detalles.html?id=${results.id}">
+                        <div class=""><img src="${imageneslink + results.backdrop_path} " alt="${results.name}"> <h3>${results.name}</h3></div></a>
+                
+                        <div class="uk-position-center uk-panel"></div>
+                </div>
+            </li>
+            `
             }
             
    
