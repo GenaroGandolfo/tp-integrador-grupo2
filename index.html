@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+    <script src="js/buscador.js"></script>
     <script src="js/atajos.js"></script>
     <script src="js/index.js"></script>
     
@@ -20,7 +21,14 @@
             <li><h1>Pelis.ar</h1></li> 
             <li class="navegador"><a href="">Login</a></li>
             <li> <a href="genres.html">Géneros</a></li>
-            <li><input type="text" value= ""placeholder="Buscar... "> </li>
+            <li> 
+                <form action="resultados.busqueda" method="GET">
+                    <label for="buscar"></label><input type="text" name="buscar" value= ""placeholder="Buscar... "> 
+                    <button>Buscar</button>
+                </form>    
+            
+            
+            </li>
         </ul>
     </header>
 

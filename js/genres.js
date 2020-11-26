@@ -64,5 +64,33 @@ window.addEventListener ("load",function(){
 	console.log('El error fué: ' + error);
 })
 
+fetch (`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=28`)  
+.then(function(response){
+    return response.json();
+    })
+    .then(function(data){
+        console.log(data);
     
+        var accion = document.querySelector("#accion");
+
+        for (let index = 0; index < data.results.length; index++) {
+            var results = data.results[index];
+
+            accion.innerHTML +=
+            `
+                <li>
+                    <a href="movieDetails.html"> <div><img src="${imageneslink}${results.poster_path}" alt="${results.name}"> </div></a>
+                    <div class="uk-position-center uk-panel"></div>
+                </li>
+            `
+            
+        }
+})
+
+
+    .catch(function(error){
+    console.log('El error fué: ' + error);
+    })
+
+
 })
