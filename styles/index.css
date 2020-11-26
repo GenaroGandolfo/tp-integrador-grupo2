@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    background: black;
+    background: darkcyan;
     border: 2px;
     text-align: center;
     border: black solid 2px;
@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-    color: black;
+    color:white;
 }
 
 h3 {
@@ -42,14 +42,14 @@ h3 {
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: black;
     border: 2px black solid;
 }
 
 
 .header ul a{
     text-decoration: none;
-    color: antiquewhite;
+    color: white;
 }
 
 .cajas div {
@@ -97,6 +97,7 @@ footer{
     padding-left: 10px;
     padding-bottom: 2px;
     padding-right: 10px;
+    border-top: solid 2px darkcyan;
 }
 .footer img {
     height: 30px;
