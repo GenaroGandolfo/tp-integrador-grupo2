@@ -5,14 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="styles/listaGenero.css">
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
     <script src="js/atajos.js"></script>    
     <script src="js/listaGeneros.js"></script>  
 </head>
 <body>
+    <header class="header">  
+        <ul>
+            <img src="../tp-integrador-grupo2/imagenes/logo.png" alt="">
+            <li><h1>Pelis.ar</h1></li> 
+            <li class="navegador"><a href="">Login</a></li>
+            <li> <a href="listaGeneros.html">Genres</a></li>
+            <li> 
+                <form action="resultados.busqueda" method="GET">
+                    <label for="buscar"></label><input type="text" name="buscar" value= ""placeholder="Search... "> 
+                    <button>Search</button>
+                </form>    
+            
+            </li>
+        </ul>
+    </header>
+
     <section id="listaDeGeneros">
 
     </section>
+
 </body>
+
+<footer class="footer">
+
+    <div class="nombres">
+        <p>Santiago Jordan</p>
+        <p>Genaro Gandolfo</p>
+        <p>Felipe de Aramburu</p>
+    </div>
+    <div class="contactenos">
+        <a href="https://mail.google.com/mail/u/4/#inbox">Contact Us</a>
+
+    </div>
+
+    <div class="redes">
+        <a href="https://www.instagram.com/pelis_arr/"><img src="../tp-integrador-grupo2/imagenes/insta va.png" alt=""></a></li>
+        <a href="https://www.facebook.com/"><img src="../tp-integrador-grupo2/imagenes/logofacebook.png" alt=""></a></li>
+        <a href="https://twitter.com/home"><img src="../tp-integrador-grupo2/imagenes/logotwitter.png" alt=""></a></li>
+    </div>
+    
+
+</footer>
 </html>
