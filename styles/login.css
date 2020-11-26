@@ -1,0 +1,107 @@
+
+
+.header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background: darkcyan;
+    border: 2px;
+    text-align: center;
+    border: black solid 2px;
+    padding: 20px;
+    padding-inline-start: 0px;
+    margin: 0px; 
+}
+
+.header img {
+    height: 100px;
+    width: 100px;
+}
+
+.nombre{
+    background-color: white;
+    color: black(143, 141, 141, 0.637);
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.formsMail{
+    background-color: white;
+    color: black143, 141, 141, 0.637);
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+}
+.formsContra{
+    background-color: white;
+    color: black(143, 141, 141, 0.637);
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.form-group{
+    margin-top: 25px
+}
+button{
+    margin-top: 20px;
+    border-radius: 5px;
+}
+body{
+    background-color: white; 
+    background: rgb(0, 0, 0);
+    font-family: "Gill sans", sans-serif;
+    width: 100%;
+}
+
+
+.inicio{
+    background: wheat;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+footer{
+    color: white;
+    background: black;    
+    margin-top: 100px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    border-top: solid 2px darkcyan;
+}
+.footer img {
+    height: 30px;
+    width: 30;
+ }
+
+ .contactenos a {
+     color: white;
+ }
+
+ .nombres{
+    display: flex;
+    justify-content: space-around;
+}
+    
+.contactenos {
+    text-align: center;
+    
+}
+    
+.redes {
+    text-align: center;
+}
+
