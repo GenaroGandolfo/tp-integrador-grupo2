@@ -38,7 +38,7 @@ window.addEventListener('load', function(){
                 
                     <li>
                         <div class="uk-panel">
-                            <a href="detallesPeliculas.html?id=${results.id}">
+                            <a href="detalles.html?id=${results.id}">
                             <div class="imagnesCarrusel"><img src="${imageneslink + results.backdrop_path} " alt="${results.title}"><h3>${results.title}</h3></div></a>
                                 
                                 <div class="uk-position-center uk-panel"></div>
@@ -58,7 +58,7 @@ window.addEventListener('load', function(){
             for(let index = 0; index< data.results.length; index++){
                 var results = data.results[index];
                 tituloSeries.innerHTML = `${nombre} TV Shows`
-                series.innerHTML += `<a href="detallesSeries.html?id=${results.id}"><div class=""><img src="${imageneslink + results.backdrop_path} " alt="${results.name}"></div></a>`
+                series.innerHTML += `<a href="detalles.html?id=${results.id}"><div class=""><img src="${imageneslink + results.backdrop_path} " alt="${results.name}"></div></a>`
 
             }
             
