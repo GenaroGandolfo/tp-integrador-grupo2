@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
     var peliculas = document.querySelector('.imagenesPelicula');
     var series = document.querySelector('.imagenesSerie');
     var tituloSeries = document.querySelector('.series');
-    
+    var carruselPeli = document.querySelector('#carruselPeli')
    /*
     //var queryString = location.search
     var queryStringObj = new URLSearchParams (queryString)
@@ -33,7 +33,21 @@ window.addEventListener('load', function(){
             for(let index = 0; index<data.results.length; index++){
                 var results = data.results[index];
                 titulo.innerHTML = `${nombre} Movies`
-                peliculas.innerHTML += `<a href="detallesPeliculas.html?id=${results.id}"><div class="peliculasBloque"><img src="${imageneslink + results.backdrop_path} " alt="${results.title}"></div></a>`
+                carruselPeli.innerHTML += `
+
+                
+                    <li>
+                        <div class="uk-panel">
+                            <a href="detallesPeliculas.html?id=${results.id}">
+                            <div class="imagnesCarrusel"><img src="${imageneslink + results.backdrop_path} " alt="${results.title}"><h3>${results.title}</h3></div></a>
+                                
+                                <div class="uk-position-center uk-panel"></div>
+                        </div>
+                    </li>
+                
+            
+            `
+
 
             }
 
