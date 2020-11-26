@@ -80,3 +80,13 @@ footer{
 .redes {
     text-align: center;
 }
+
+@media only screen and (max-width: 375px) {
+    .navegador{
+        display: none;
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
