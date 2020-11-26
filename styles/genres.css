@@ -4,7 +4,6 @@
     align-items: center;
     list-style-type: none;
     background:darkcyan;
-    border: 2px;
     text-align: center;
     border: black solid 2px;
     padding-inline-start: 0px;
@@ -66,8 +65,7 @@ footer {
     padding-left: 10px;
     padding-bottom: 2px;
     padding-right: 10px;
-    border-top: solid 2px;
-    border-color: darkcyan;
+    border-top: solid 2px darkcyan;
 }
 .footer img {
     height: 30px!important;
@@ -102,19 +100,23 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 0px;
+    }
+    section{
+        width: 375px;
+    }
+    body{
+        width: 375px; 
     }
     h1{
         font-size: 60px;
         margin: 10px;
     }
-    .cajas{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    .generos{
+        width: 375px;
     }
-    .cajas div{
-        width: 90px;
-        height: 115px;
-    }
+  
+
     h3 {
         padding: 0px;
         margin: 0px;
@@ -128,4 +130,4 @@ footer {
     }
     .nombres{
         font-size: 14px;
-    }
+    }}
