@@ -43,7 +43,7 @@ body{
 
 .header ul a{
     text-decoration: none;
-    color: antiquewhite;
+    color: white;
 }
 
 .cajas div {
@@ -88,6 +88,8 @@ footer{
     padding-left: 10px;
     padding-bottom: 2px;
     padding-right: 10px;
+    border-top: solid 2px;
+    border-color: darkcyan;
 }
 .footer img {
     height: 30px;
