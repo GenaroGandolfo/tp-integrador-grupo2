@@ -81,6 +81,12 @@ footer{
     text-align: center;
 }
 
+#listaDeGeneros{
+text-align: center;
+padding-top: 40px;
+}
+
+
 @media only screen and (max-width: 375px) {
     .navegador{
         display: none;
